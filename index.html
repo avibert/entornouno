@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #000000">
+      <!-- Cono -->
+      <a-cone position="0 2 -5" radius-bottom="1" height="2" color="#F30FFA"></a-cone>
+
+      <!-- Dona alrededor del cono -->
+      <a-torus position="0 3 -5" radius="1.5" radius-tubular="0.05" rotation="0 45 0" color="#996EFA"></a-torus>
+
+      <!-- Esferas -->
+      <a-sphere position="1.5 3.5 -5" radius="0.3" color="#2590FA"></a-sphere>
+      <a-sphere position="-1.5 3.5 -5" radius="0.4" color="#2569FA"></a-sphere>
+      <a-sphere position="0 4.5 -5" radius="0.4" color="#4157FA"></a-sphere>
+      <a-sphere position="2.2 3.2 -5" radius="0.3" color="#7152FA"></a-sphere>
+      <a-sphere position="-2.2 3.2 -5" radius="0.3" color="#61F5FA"></a-sphere>
+      <a-sphere position="0 4 -5" radius="0.2" color="#6194FA"></a-sphere>
+
+      <!-- Luces -->
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 -3"></a-light>
+
+      <!-- Cámara y Entorno -->
+      <a-entity camera look-controls position="0 1.6 0"></a-entity>
+       <!-- Cámara con controles de teclado -->
+      <a-entity camera wasd-controls look-controls></a-entity>
+    </a-scene>
+  </body>
+</html>
